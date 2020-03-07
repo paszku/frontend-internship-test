@@ -1,9 +1,9 @@
 /* Here /* Here goes your JS code */
              /* Here goes your JS code */
 const popupHide = document.querySelector(".popup");
-popupHide.style.display = "none";
+// popupHide.style.display = "none";
 
-const btnMain = document.getElementById("show-popup-form"); 
+const btnMain = document.getElementById("clickMeBtn"); 
 const checkbox = document.querySelector(".checkbox");  
 const submit = document.querySelector(".submit--button");  
 const eMail = document.querySelector(".email");
