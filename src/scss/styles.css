@@ -1,0 +1,209 @@
+.popup {
+  width: 200px;
+  height: 250px;
+  border: 1px solid white;
+  border-radius: 2%;
+  background-color: white;
+  position: relative;
+  top: -50vh;
+  left: 50vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+.popup .popup--container {
+  width: 100%;
+  text-align: center;
+}
+
+.popup--header {
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+}
+
+.email, .password {
+  padding: 1em;
+  width: 80%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid #939393;
+  border-right: 1px solid #939393;
+  margin: 1em 0;
+}
+
+.terms--conditions {
+  font-size: 0.8em;
+  width: 100%;
+}
+
+.submit--button {
+  background-color: black;
+  color: white;
+  font-size: 0,75em;
+  height: 3em;
+  margin-top: 1.5em;
+  width: 95%;
+}
+
+.popup:before {
+  content: "x";
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 1em;
+  border-radius: 50%;
+  background: black;
+  font-weight: 700;
+  position: absolute;
+  left: 220px;
+  top: -10px;
+}
+
+.checkbox--checked {
+  background-color: pink;
+}
+
+.success--message {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup h1 {
+  font-size: 32px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.popup input[type=email], .popup input[type=password] {
+  display: block;
+  height: 50px;
+  width: 80%;
+  margin: 15px auto;
+  padding-left: 30px;
+  border: 2px solid #000;
+}
+
+.popup .customCheckbox {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.popup label {
+  display: inline-block;
+  width: 90%;
+  font-size: 22px;
+  text-align: right;
+}
+
+.popup input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  bottom: -5px;
+  height: 0;
+  width: 0;
+}
+
+.popup .checkmark {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.popup .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.popup .customCheckbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.popup .customCheckbox .checkmark:after {
+  left: 7px;
+  top: 0px;
+  width: 8px;
+  height: 18px;
+  border: solid #000;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.popup button {
+  display: block;
+  height: 50px;
+  width: 90%;
+  margin: 25px auto 0;
+  margin-bottom: 40px;
+  color: #FFF;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.popup:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup > div {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  margin: calc(50vh - 200px) auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.close {
+  background: #000;
+  color: #FFFFFF;
+  line-height: 28px;
+  position: absolute;
+  right: -8px;
+  text-align: center;
+  top: -8px;
+  width: 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.close:hover {
+  background-color: #262626;
+}
+/*# sourceMappingURL=styles.css.map */
