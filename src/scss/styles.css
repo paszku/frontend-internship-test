@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -13,29 +11,27 @@ body {
 }
 
 body .popup {
-  width: 200px;
-  height: 250px;
+  width: 300px;
+  height: 370px;
   border: 1px solid white;
   border-radius: 2%;
-  background-color: red;
+  background-color: white;
   position: relative;
-  top: -50vh;
+  top: 50vh;
   left: 50vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 15px;
+  z-index: 9999;
 }
 
 body .popup .popup--container {
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 body .popup--header {
@@ -69,21 +65,6 @@ body .submit--button {
   width: 95%;
 }
 
-body .popup:before {
-  content: "x";
-  color: white;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  line-height: 1em;
-  border-radius: 50%;
-  background: black;
-  font-weight: 700;
-  position: absolute;
-  left: 220px;
-  top: -10px;
-}
-
 body .checkbox--checked {
   background-color: pink;
 }
@@ -102,46 +83,62 @@ body .success--message, body .btn-main {
   cursor: pointer;
 }
 
-.popup {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  opacity: 0;
-  background-color: red;
-  pointer-events: none;
+.popup .popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 2%;
+  background-color: white;
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  z-index: 9999;
+}
+
+.popup .popup .popup--container {
+  width: 100%;
+  text-align: center;
 }
 
 .popup h1 {
   font-size: 32px;
   font-family: 'Lobster', cursive;
   text-align: center;
-  margin-top: 40px;
+  margin: 20px auto;
 }
 
 .popup input[type=email], .popup input[type=password] {
   display: block;
   height: 50px;
   width: 80%;
-  margin: 15px auto;
+  margin: 20px auto;
   padding-left: 30px;
   border: 2px solid #000;
 }
 
 .popup .customCheckbox {
+  font-size: 19px;
+  padding-top: 3px;
   display: block;
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 91%;
 }
 
 .popup label {
-  display: inline-block;
-  width: 90%;
-  font-size: 22px;
-  text-align: right;
+  text-align: center;
+}
+
+.popup .text {
+  padding-left: 35px;
 }
 
 .popup input[type=checkbox] {
@@ -159,8 +156,8 @@ body .success--message, body .btn-main {
   cursor: pointer;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   background-color: transparent;
   border: 2px solid #000;
 }
@@ -176,10 +173,10 @@ body .success--message, body .btn-main {
 }
 
 .popup .customCheckbox .checkmark:after {
-  left: 7px;
-  top: 0px;
-  width: 8px;
-  height: 18px;
+  left: 6px;
+  top: -3px;
+  width: 6px;
+  height: 16px;
   border: solid #000;
   border-width: 0 4px 4px 0;
   -webkit-transform: rotate(45deg);
@@ -190,11 +187,17 @@ body .success--message, body .btn-main {
   display: block;
   height: 50px;
   width: 90%;
-  margin: 25px auto 0;
-  margin-bottom: 40px;
+  margin: 40px auto 30px;
+  border: none;
   color: #FFF;
   background-color: #000;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popup button:hover {
+  background-color: pink;
 }
 
 .popup:target {
@@ -213,20 +216,25 @@ body .success--message, body .btn-main {
 }
 
 .close {
-  background: #000;
+  background: white;
   color: #FFFFFF;
-  line-height: 28px;
+  line-height: 17px;
   position: absolute;
-  right: -8px;
+  right: -12px;
   text-align: center;
-  top: -8px;
-  width: 28px;
+  top: -12px;
+  width: 30px;
   text-decoration: none;
-  font-weight: bold;
   border-radius: 50%;
 }
 
+.close i {
+  color: black;
+  font-size: 34px;
+  line-height: 30px;
+}
+
 .close:hover {
-  background-color: #262626;
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */
