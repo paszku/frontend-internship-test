@@ -3,7 +3,7 @@ popupHide.style.display = "none";
 
 
 const btnMain = document.querySelector(".btn-main");
-const checkbox = document.querySelector(".checkbox");  
+const checkbox = document.querySelector("input.checkbox");  
 const submit = document.getElementById("sign-in-submit");  
 const eMail = document.querySelector(".email");
 const password = document.querySelector(".password");
@@ -24,18 +24,15 @@ cancel.addEventListener('click', function(){
 })
 
 submit.addEventListener('click', function() { 
-    if(password.value.length == 0 , eMail.value.length ==0)
-    alert("Uzupełnij luki")
-    else
+    if(eMail.value.length > 3 & password.value.length > 3 & checkbox.checked == true){
     setTimeout( () => {
         popupHide.style.display = "none";
         successMessage.style.display = "block";
         btnMain.style.display = "none";
-        }, 3000);
+        }, 3000);}
+        else {
+            alert("You email or password is too short, please accept terms and conditions")
+        }
         
 
 })
-
-
-
-

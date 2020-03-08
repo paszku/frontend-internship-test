@@ -1,7 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  // box-sizing: border-box;
 }
 
 
@@ -13,7 +12,7 @@ body{
  
 
 .popup { 
-  // display: none;
+ 
   width: 300px; 
   height: 370px; 
   border: 1px solid white;
@@ -41,7 +40,6 @@ body{
   }
   
   .email, .password { 
-    // padding: 1em;
     width:80%;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -65,20 +63,6 @@ body{
     width:95%;
   }
   
-  // .popup:before{ 
-  //   content: "x";
-  //   color: white;
-  //   width: 20px; 
-  //   height: 20px; 
-  //   text-align: center;
-  //   line-height: 1em;
-  //   border-radius: 50%; 
-  //   background: black;
-  //   font-weight: 700;
-  //   position: absolute;
-  //   left: 220px;
-  //   top: -10px;
-  // }
   
   .checkbox--checked{
     background-color: pink;
