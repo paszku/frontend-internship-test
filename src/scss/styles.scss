@@ -4,8 +4,6 @@
 .popup {
     .popup { 
   display: flex;
-//   width: 250px; 
-//   height: 300px; 
   border: 1px solid white;
   border-radius: 2%;
   background-color: white;
@@ -50,9 +48,6 @@
     }
 
     & label {
-        // display: inline-block;
-        // width: 90%;
-        // font-size: 19px;
         text-align: center;
     }
     & .text{
@@ -79,7 +74,7 @@
         width: 20px;
         background-color: transparent;
         border: 2px solid #000;
-        // margin-right: 5px;
+       
     }
 
     & .checkmark:after {
@@ -106,9 +101,10 @@
     & button {
         display: block;
         height: 50px;
-        width: 90%;
-        margin: 40px auto 30px;
-        // margin-bottom: 40px;
+        width: 85%;
+        padding: 20px 0;
+        margin: 30px auto 30px;
+       
         border: none;
         color: #FFF;
         background-color: #000;

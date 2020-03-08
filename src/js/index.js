@@ -1,7 +1,6 @@
-/* Here /* Here goes your JS code */
-             /* Here goes your JS code */
 const popupHide = document.querySelector(".popup");
 popupHide.style.display = "none";
+
 
 const btnMain = document.querySelector(".btn-main");
 const checkbox = document.querySelector(".checkbox");  
@@ -10,7 +9,7 @@ const eMail = document.querySelector(".email");
 const password = document.querySelector(".password");
 const successMessage = document.querySelector(".success--message");
 const cancel = document.querySelector(".close");
-// successMessage.style.display = "none";
+successMessage.style.display = "none";
 
 btnMain.addEventListener('click', function(){
     popupHide.style.display = "flex";
@@ -24,24 +23,19 @@ cancel.addEventListener('click', function(){
 
 })
 
-
-
-// checkbox.addEventListener('click', () => {
-//     submit.classList.toggle('checkbox--checked');
-// })
-
-submit.addEventListener('click', () => { 
+submit.addEventListener('click', function() { 
+    if(password.value.length == 0 , eMail.value.length ==0)
+    alert("Uzupełnij luki")
+    else
     setTimeout( () => {
         popupHide.style.display = "none";
-        // successMessage.style.display = "block";
+        successMessage.style.display = "block";
         btnMain.style.display = "none";
         }, 3000);
+        
 
 })
 
-window.onload = function () {
-    var clickMeBtn = document.getElementById('clickMeBtn');
-    clickMeBtn.addEventListener('click', function (event) {
-        location.href = "#show-popup-form";
-    });
-}; 
+
+
+

@@ -42,7 +42,6 @@ body .popup--header {
 }
 
 body .email, body .password {
-  padding: 1em;
   width: 80%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -186,8 +185,9 @@ body .success--message, body .btn-main {
 .popup button {
   display: block;
   height: 50px;
-  width: 90%;
-  margin: 40px auto 30px;
+  width: 85%;
+  padding: 20px 0;
+  margin: 30px auto 30px;
   border: none;
   color: #FFF;
   background-color: #000;
